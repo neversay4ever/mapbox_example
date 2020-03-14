@@ -17,7 +17,7 @@ def df_to_geojson(df, properties, lat='latitude', lon='longitude'):
     return geojson
 
 
-data = pd.read_csv("./v2_sample_stat.csv")
+data = pd.read_csv("./isolation_stat.csv")
 cols = ['sample_species', 'pie_type', 'count']
 
 geo_json = df_to_geojson(data, cols)
